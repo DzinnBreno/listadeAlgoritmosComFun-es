@@ -1,0 +1,13 @@
+programa{
+	inclua biblioteca Matematica --> mat
+	funcao inicio(){
+		real raio, area
+
+		escreva("Digite o raio do círculo: ")
+		leia(raio)
+
+		area = mat.PI * mat.potencia(raio, 2.0)
+
+		escreva("A área do círculo é: ", mat.arredondar(area, 2))
+	}
+}
