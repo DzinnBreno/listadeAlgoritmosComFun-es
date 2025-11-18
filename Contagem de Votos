@@ -1,0 +1,32 @@
+programa{
+	funcao inicio(){
+		inteiro voto
+		inteiro votosC1 = 0
+		inteiro votosC2 = 0
+		inteiro votosC3 = 0
+
+		escreva("--- URNA ELETRÔNICA ---\n")
+		escreva("Digite 1, 2 ou 3 para votar (ou 0 para Sair): ")
+		leia(voto)
+		enquanto (voto != 0)
+			se (voto == 1)
+				votosC1 = votosC1 + 1
+				escreva("Voto no Candidato 1 computado!\n")
+			senao se (voto == 2)
+				votosC2 = votosC2 + 1
+				escreva("Voto no Candidato 2 computado!\n")
+			senao se (voto == 3)
+				votosC3 = votosC3 + 1
+				escreva("Voto no Candidato 3 computado!\n")
+			senao
+				escreva("Voto inválido.\n")
+
+			escreva("\nPróximo eleitor (ou 0 para Sair): ")
+			leia(voto)
+
+		escreva("\n--- VOTAÇÃO ENCERRADA ---\n")
+		escreva("Total Candidato 1: ", votosC1, " votos\n")
+		escreva("Total Candidato 2: ", votosC2, " votos\n")
+		escreva("Total Candidato 3: ", votosC3, " votos\n")
+	}
+}
