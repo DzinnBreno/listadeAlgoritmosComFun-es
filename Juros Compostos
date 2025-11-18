@@ -1,0 +1,17 @@
+programa{
+	inclua biblioteca Matematica --> mat
+	funcao inicio(){
+		real capital, taxa, tempo, montante
+
+		escreva("Digite o Capital Inicial (C): ")
+		leia(capital)
+		escreva("Digite a Taxa de Juros (i) (ex: 0.05 para 5%): ")
+		leia(taxa)
+		escreva("Digite o Tempo (t) em meses: ")
+		leia(tempo)
+
+		montante = capital * mat.potencia((1.0 + taxa), tempo)
+
+		escreva("O Montante final é: R$ ", mat.arredondar(montante, 2))
+	}
+}
