@@ -1,0 +1,20 @@
+programa{
+	funcao inicio(){
+		inteiro numeroSecreto = 77
+		inteiro palpite
+
+		escreva("--- JOGO: ADIVINHE O NÚMERO ---\n")
+		escreva("Tente adivinhar o número secreto: ")
+		leia(palpite)
+
+		enquanto (palpite != numeroSecreto)
+			se (palpite < numeroSecreto)
+	
+				escreva("Mais alto! Tente de novo: ")
+			senao
+				escreva("Mais baixo! Tente de novo: ")
+			leia(palpite)
+
+		escreva("Parabéns! Você acertou o número ", numeroSecreto, "!")
+	}
+}
